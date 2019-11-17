@@ -1,8 +1,13 @@
+import base64
+
 from flask import Flask, render_template, request, redirect, send_from_directory
 from letsjson import getjson
-import os
+
+from flask_cors import CORS, cross_origin
+
 
 app = Flask("cosmetic-safety")
+CORS(app)
 
 @app.route('/')
 def upload_file():
@@ -16,31 +21,30 @@ def uploader_file():
         f.save(f.filename)
         full_filename = "/Users/nathaniel/PycharmProjects/cosmetic-safety/" + f.filename
         myjson = getjson(full_filename)
-        htmlstr = "<table><tr><td>Chemical</td><td>Harmfulness</td>"
-        fillstr = ""
-        for chemical in myjson:
-            fillstr += "<tr>"
-            fillstr += "<td>"
-            fillstr += chemical
-            fillstr += "</td>"
-            fillstr += "<td>"
-            fillstr += myjson[chemical]
-            fillstr += "</td>"
-            fillstr += "</tr>"
 
-        if fillstr == "":
-            return "Hooray! Your product is just fine!"
-        else:
-            return htmlstr + fillstr + "</table"
+        return render_template("resultstable.html", chemicals=myjson)
 
+@app.route('/uploadee', methods=['GET', 'POST'])
+def uploader_filee():
+    if request.method == 'POST':
+        print(request.data)
+        img_data = request.data[22:]
+        print(img_data)
+        with open("imageToSave.png", "wb") as fh:
+            fh.write(base64.decodebytes(img_data))
+        full_filename = "/Users/nathaniel/PycharmProjects/cosmetic-safety/imageToSave.png"
+        myjson = getjson(full_filename)
+
+        return render_template("resultstable.html", chemicals=myjson)
 
 @app.route('/<path:filename>')
 def send_file(filename):
     return send_from_directory('/', filename)
 
 
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
 
 
