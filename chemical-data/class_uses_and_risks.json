@@ -38,5 +38,18 @@
     "Class": "Formaldehyde-releasing agent",
     "Uses": "Used as preservatives, formaldehyde-releasing agents can be found in products such as nail hardeners and hair straightening treatments.",
     "Risks": "Formaldehyde is a proven carcinogen, and can also cause bronchitis."
+  },
+  {
+    "Class": "Acrylate",
+    "Risks": "Search Results\nFeatured snippet from the web\nThe International Agency of Research on Cancer as well as the U.S. Environmental Protection Agency (EPA) have classified acrylates as a possible human carcinogen. Exposure to acrylates has been linked to skin, eye, and throat reactions as well as more serious health consequences such as cancer."
+  },
+  {
+    "Class": "EDTA",
+    "Risks": "Classified as skin irritant; enhances skin absorbtion, leading to unwanted external chemical exposure. Labeled as 'expected to be toxic' by the Canada Domestic Substance List."
+  },
+  {
+    "Class": "Triethanolamine",
+    "Risks": "Dangerous to skin if applied on a long-term basis; toxic if not washed away quickly. High doses of triethanolamine have caused liver, bladder, and testicular cancer in laboratory animals."
   }
+
 ]

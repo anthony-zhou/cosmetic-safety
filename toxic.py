@@ -1,7 +1,8 @@
 import wolframalpha
 
 def gettoxicity(item):
-
+    if item is None:
+        return ["Error"]
     item = str(item)
 
     appid = "JQQAVR-GA9XYEGUE2"
@@ -11,6 +12,11 @@ def gettoxicity(item):
     for pod in res.pods:
         if pod['@title'] == 'Toxicity properties':
             try:
-                return pod['subpod']['plaintext'].split(" | ")
+                x = pod['subpod']['plaintext'].split(" | ")
+                if x is not None:
+                    return x
+                else:
+                    return ["harmful effects"]
             except:
                 return ["harmful effects"]
+
