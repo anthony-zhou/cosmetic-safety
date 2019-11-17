@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request, redirect, send_from_directory
+from letsjson import getjson
 import os
 
 app = Flask("cosmetic-safety")
 
 @app.route('/')
 def upload_file():
-    os.makedirs(os.path.join(app.instance_path, 'htmlfi'), exist_ok=True)
     return render_template('/upload.html')
 
 
@@ -15,7 +15,24 @@ def uploader_file():
         f = request.files['file']
         f.save(f.filename)
         full_filename = "/Users/nathaniel/PycharmProjects/cosmetic-safety/" + f.filename
-        return render_template("imagereturn.html", user_image=full_filename)
+        myjson = getjson(full_filename)
+        htmlstr = "<table><tr><td>Chemical</td><td>Harmfulness</td>"
+        fillstr = ""
+        for chemical in myjson:
+            fillstr += "<tr>"
+            fillstr += "<td>"
+            fillstr += chemical
+            fillstr += "</td>"
+            fillstr += "<td>"
+            fillstr += myjson[chemical]
+            fillstr += "</td>"
+            fillstr += "</tr>"
+
+        if fillstr == "":
+            return "Hooray! Your product is just fine!"
+        else:
+            return htmlstr + fillstr + "</table"
+
 
 @app.route('/<path:filename>')
 def send_file(filename):
