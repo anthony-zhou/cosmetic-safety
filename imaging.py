@@ -47,13 +47,9 @@ def text_words(path):
 
     words = []
 
-    # for text in texts:
-    #     words.append(text.description)
-
-    for text in texts:
-        if text.description.lower() == 'ingredients' or text.description.lower() == 'ingredients:':
-            ingredients = True
-        if ingredients:
-            words.append(text.description)
+    for text in texts[1:]:
+        words.append(text.description)
 
     return words
+
+
