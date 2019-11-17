@@ -1,0 +1,126 @@
+[
+  {
+    "Name": "cyclotetrasiloxane",
+    "Class": "siloxane"
+  },
+  {
+    "Name": "cylcopentasiloxane",
+    "Class": "siloxane"
+  },
+  {
+    "Name": "Cyclomethicone",
+    "Class": "siloxane"
+  },
+  {
+    "Name": "cyclohexasiloxane",
+    "Class": "siloxane"
+  },
+  {
+    "Name": "sodium laureth sulfate",
+    "Class": "sodium laureth sulfate"
+  },
+  {
+    "Name": "BHA",
+    "Class": "BHA/BHT"
+  },
+  {
+    "Name": "BHT",
+    "Class": "BHA/BHT"
+  },
+  {
+    "Name": "Butylated hydroxyanisole",
+    "Class": "BHA/BHT"
+  },
+  {
+    "Name": "butylated hydroxytoluene",
+    "Class": "BHA/BHT"
+  },
+  {
+    "Name": "polyethylene glycol",
+    "Class": "PEG"
+  },
+  {
+    "Name": "propylene glycol",
+    "Class": "PEG"
+  },
+  {
+    "Name": "petrolatum",
+    "Class": "petrolatum"
+  },
+  {
+    "Name": "petroleum jelly",
+    "Class": "petrolatum"
+  },
+  {
+    "Name": "soft paraffin",
+    "Class": "petrolatum"
+  },
+  {
+    "Name": "white petrolatum",
+    "Class": "petrolatum"
+  },
+  {
+    "Name": "mineral oil jelly",
+    "Class": "petrolatum"
+  },
+  {
+    "Name": "methylparaben",
+    "Class": "paraben"
+  },
+  {
+    "Name": "butylparaben",
+    "Class": "paraben"
+  },
+  {
+    "Name": "propylparaben",
+    "Class": "paraben"
+  },
+  {
+    "Name": "isobutylparaben",
+    "Class": "paraben"
+  },
+  {
+    "Name": "ethylparaben",
+    "Class": "paraben"
+  },
+  {
+    "Name": "dibutyl phthalate",
+    "Class": "phthalate"
+  },
+  {
+    "Name": "dimethyl phthalate",
+    "Class": "phthalate"
+  },
+  {
+    "Name": "diethyl phthalate",
+    "Class": "phthalate"
+  },
+  {
+    "Name": "quaternium-15",
+    "Class": "Formaldehyde-releasing agent"
+  },
+  {
+    "Name": "DMDM hydantoin",
+    "Class": "Formaldehyde-releasing agent"
+  },
+  {
+    "Name": "formaldehyde",
+    "Class": "Formaldehyde-releasing agent"
+  },
+  {
+    "Name": "methylene glycol",
+    "Class": "Formaldehyde-releasing agent"
+  },
+  {
+    "Name": "formaldehyde monohydrate",
+    "Class": "Formaldehyde-releasing agent"
+  },
+  {
+    "Name": "methanediol",
+    "Class": "Formaldehyde-releasing agent"
+  },
+  {
+    "Name": "oxybenzone",
+    "Class": "TODO"
+  }
+]

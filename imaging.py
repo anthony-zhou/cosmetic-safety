@@ -57,4 +57,3 @@ def text_words(path):
             words.append(text.description)
 
     return words
-

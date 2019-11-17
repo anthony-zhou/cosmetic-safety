@@ -4,10 +4,13 @@ def gettoxicity(item):
 
     item = str(item)
 
-    app_id = 'JQQAVR-5RY4HPRUV3'
-    client = wolframalpha.Client(app_id)
+    appid = "JQQAVR-GA9XYEGUE2"
+    client = wolframalpha.Client(appid)
     res = client.query(item)
 
     for pod in res.pods:
         if pod['@title'] == 'Toxicity properties':
-            return pod['subpod']['plaintext'].split(" | ")
+            try:
+                return pod['subpod']['plaintext'].split(" | ")
+            except:
+                return ["harmful effects"]

@@ -1,0 +1,42 @@
+[
+  {
+    "Class": "siloxane",
+    "Uses": "Siloxanes are often used in cosmetics to soften, smooth and moisten. They can be found in hair products, deodorant creams, moisturizers and facial treatments.",
+    "Risks": "According to the David Suzuki foundation, siloxanes can harm the reproductive and immune systems, cause uterine tumours, and even influence neurotransmitters."
+  },
+  {
+    "Class": "sodium laureth sulfate",
+    "Uses": "Sodium Laureth Sulfate is used as a detergent and also to make products bubble and foam. It can be found in shampoos, shower gels, facial cleansers, and household cleaning products.",
+    "Risks": "Because of the way Sodium Laureth Sulfate (SLES) is manufactured, it may contain ethylene oxide, a known carcinogen, and 1,4-dioxane, a possible carcinogen. These chemicals can be removed during manufacturing, but there is no guarantee that they have been."
+  },
+  {
+    "Class": "BHA/BHT",
+    "Uses": "BHA (butylated hydroxyanisole) and BHT (butylated hydroxytoluene) are preservatives. They can be found in lipsticks and moisturizers, as well as food.",
+    "Risks": "BHA is a possible human carcinogen, and interferes with hormone function. It is also toxic to many marine organisms."
+  },
+  {
+    "Class": "PEG",
+    "Uses": "Used as thickeners, solvents, softeneres, and moisture-carriers, PEGs (polyethylene glycols) are often the bases of cosmetic creams.",
+    "Risks": "Because of the way polyethlylene glycols are manufactured, it may contain ethylene oxide, a known carcinogen, and 1,4-dioxane, a possible carcinogen. These chemicals can be removed during manufacturing, but there is no guarantee that they have been. In addition to contaminants, the chemical itself can be toxic to broken skin."
+  },
+  {
+    "Class": "Petrolatum",
+    "Uses": "Petroleum jelly (a.k.a mineral oil jelly) is used for a variety of hair care products and moisturizers.",
+    "Risks": "Petrolatum can be contaminated with polycyclic aromatic hydrocarbons (PAHs). Because of this, the European Union classifies petrolatum as a carcinogen."
+  },
+  {
+    "Class": "Paraben",
+    "Uses": "The most widely used preservative in cosmetics, parabens are also used in fragrances, where they may not be listed, as they are considered trade secrets.",
+    "Risks": "Parabens interfere with hormone function. They mimic estrogen, the main female sex hormone, and may be associated with breast cancer. Estimates suggest that women are exposed to 50mg of parabens a day from cosmetics."
+  },
+  {
+    "Class": "Phthalate",
+    "Uses": "Phthalates can be used as softeners in nail polish and hair spray, and as a solvent in fragrances.",
+    "Risks": "The dangers of phthalates are not fully known. Some may adversely affect human reproduction or development."
+  },
+  {
+    "Class": "Formaldehyde-releasing agent",
+    "Uses": "Used as preservatives, formaldehyde-releasing agents can be found in products such as nail hardeners and hair straightening treatments.",
+    "Risks": "Formaldehyde is a proven carcinogen, and can also cause bronchitis."
+  }
+]
