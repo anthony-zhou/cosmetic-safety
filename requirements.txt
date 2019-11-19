@@ -1,1 +1,8 @@
 flask
+flask-cors
+google-cloud-vision
+google-api-core
+google-auth
+protobuf
+wolframalpha
+wolframclient
