@@ -6,3 +6,4 @@ google-auth
 protobuf
 wolframalpha
 wolframclient
+gunicorn
