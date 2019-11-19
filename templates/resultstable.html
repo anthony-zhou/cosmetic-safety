@@ -4,25 +4,184 @@
     <meta charset="UTF-8">
     <title>Your Results</title>
     <style>
+        html {
+            font-family: 'Lato', Arial, sans-serif;
+        }
+        #wrapper {
+            width: 50%;
+            margin: auto;
+        }
+    #video {
+      border: 1px solid black;
+
+      width:400px;
+      height:240px;
+    }
+
+    #photo {
+      border: 1px solid black;
+
+      width:400px;
+      height:240px;
+    }
+
+    #canvas {
+      display:none;
+    }
+    .take-image div {
+        vertical-align: top;
+        margin-bottom: 100px;
+    }
+    .camera {
+      width: 420px;
+      display:inline-block;
+    }
+
+    .output {
+      width: 420px;
+      display:inline-block;
+    }
+
+    #startbutton {
+      display:block;
+      position:relative;
+      margin-left:auto;
+      margin-right:auto;
+      bottom:40px;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 5px;
+      background-color: #E35D6A;
+      font-size: 14px;
+      font-family: "Lato", "Arial", sans-serif;
+      color: rgba(255, 255, 255, 1.0);
+    }
+    input[type="file"] {
+        display: none;
+    }
+    input[type="submit"], .custom-file-upload, .scan-again {
+        margin-bottom: 50px;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        width: 5vw;
+        padding: 10px 0 10px 0;
+        box-shadow: none;
+        border-radius: 10px;
+        border: 2px solid #E35D6A;
+        background-color: #E35D6A;
+        cursor: pointer;
+        color: white;
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+    .scan-again {
+        width: 15vw;
+    }
+    .custom-file-upload {
+        width: 20vw;
+        background: none;
+        color: #E35D6A;
+    }
+    input[type="submit"]:hover, .custom-file-upload:hover, .scan-again:hover {
+        opacity: 1.0;
+    }
+    #heading {
+
+    }
+
+    #heading h1 {
+        font-family: 'Belleza', Times New Roman, serif;
+        letter-spacing: 5px;
+    }
         table {
-            border: 2px solid blue;
+            border: 1px solid gray;
+            box-shadow: 5px 5px 5px gray;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        th {
+            text-align: left;
+        }
+        tr:not(:first-child) {
+            height: 100px;
+        }
+        #share-buttons {
+            margin-bottom: 20px;
+        }
+        #share-buttons img {
+            width: 35px;
+            padding: 5px;
+            border: 0;
+            box-shadow: none;
+            display: inline;
+        }
+        #share-buttons a {
+            text-decoration: none;
+        }
+        #share-buttons span {
+            font-size: 20px;
+            vertical-align: top;
+            position: relative;
+            top: 10px;
+        }
+        .pink {
+            color: #E35D6A;
         }
     </style>
 </head>
 <body>
+<div id="wrapper">
+{% if chemicals|length == 0 %}
+    <h1>Your cosmetic is probably safe</h1>
+    <p>None of this cosmetic product's ingredients are in our database of dangerous chemicals. However, we are still working
+        to improve our data, so this answer may not be complete.</p>
+{% else %}
 
+    <h1>Your cosmetic may be dangerous</h1>
+    <p>After scanning this product's ingredient list, we have determined that the following chemicals may put your health at risk:</p>
 <table>
         <tr>
-                <th>Chemical</th>
-                <th>Toxicity Reasons</th>
+                <th style="width:200px">Chemical</th>
+                <th>Possible health risks</th>
         </tr>
         {% for k, v in chemicals.items() %}
                 <tr>
-                        <td>{{ k }}</td>
+                        <td class="pink">{{ k }}</td>
                         <td>{{ v }}</td>
                 </tr>
         {% endfor %}
 </table>
+{% endif %}
 
+<div id="share-buttons">
+    <span><b>Share:</b></span>
+    <!-- Email -->
+    <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+
+    <!-- Print -->
+    <a href="javascript:;" onclick="window.print()">
+        <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
+    </a>
+
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+    </a>
+
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+</div>
+<button class="scan-again" onclick="window.location.reload()">Scan another product</button>
+</div>
 </body>
 </html>

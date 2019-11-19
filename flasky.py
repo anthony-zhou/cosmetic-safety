@@ -19,7 +19,7 @@ def uploader_file():
     if request.method == 'POST':
         f = request.files['file']
         f.save(f.filename)
-        full_filename = "/Users/nathaniel/PycharmProjects/cosmetic-safety/" + f.filename
+        full_filename = "C:/Users/Anthony/Documents/GitHub/cosmetic-safety/" + f.filename
         myjson = getjson(full_filename)
 
         return render_template("resultstable.html", chemicals=myjson)
@@ -32,7 +32,7 @@ def uploader_filee():
         print(img_data)
         with open("imageToSave.png", "wb") as fh:
             fh.write(base64.decodebytes(img_data))
-        full_filename = "/Users/nathaniel/PycharmProjects/cosmetic-safety/imageToSave.png"
+        full_filename = "C:/Users/Anthony/Documents/GitHub/cosmetic-safety/imageToSave.png"
         myjson = getjson(full_filename)
 
         return render_template("resultstable.html", chemicals=myjson)

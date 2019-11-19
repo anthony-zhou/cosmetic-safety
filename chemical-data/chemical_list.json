@@ -122,5 +122,65 @@
   {
     "Name": "oxybenzone",
     "Class": "TODO"
+  },
+  {
+    "Name": "sodium lauryl sulfate",
+    "Class": "TODO"
+  },
+  {
+    "Name": "triclosan",
+    "Class": "TODO"
+  },
+  {
+    "Name": "triclocarban",
+    "Class": "TODO"
+  },
+  {
+    "Name": "aminophenol",
+    "Class": "TODO"
+  },
+  {
+    "Name": "PEG-100 stearate",
+    "Class": "PEG"
+  },
+  {
+    "Name": "PEG-32",
+    "Class": "PEG"
+  },
+  {
+    "Name": "PEG-150 Distearate",
+    "Class": "PEG"
+  },
+  {
+    "Name": "PEG-75",
+    "Class": "PEG"
+  },
+  {
+    "Name": "acrylate",
+    "Class": "Acrylate"
+  },
+  {
+    "Name": "alkyl acrylate",
+    "Class": "Acrylate"
+  },
+  {
+    "Name": "polyquaternium-7",
+    "Class": "Formaldehyde-releasing agent"
+  },
+  {
+    "Name": "diethylhexyl 2,6-naphthalate",
+    "Class": "Phthalate"
+  },
+  {
+    "Name": "polyquaternium-7",
+    "Class": "Formaldehyde-releasing agent"
+  },
+  {
+    "Name": "disodium EDTA",
+    "Class": "EDTA"
+  },
+  {
+    "Name": "triethanolamine",
+    "Class": "Triethanolamine"
   }
 ]
