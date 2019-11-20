@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917b1fb4-39f2-46a9-9062-8ac310ea127d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/android-icon-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/apple-icon-180x180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/favicon-96x96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/rosstheboss.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imagereturn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/imagereturn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/resultstable.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resultstable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/rosstheboss.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/rosstheboss.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,6 +24,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -91,7 +86,7 @@
       <workItem from="1574003271505" duration="6670000" />
       <workItem from="1574131046469" duration="3952000" />
       <workItem from="1574189445842" duration="938000" />
-      <workItem from="1574286691194" duration="977000" />
+      <workItem from="1574286691194" duration="1706000" />
     </task>
     <servers />
   </component>
@@ -113,6 +108,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/cosmetic_safety$flasky.coverage" NAME="flasky Coverage Results" MODIFIED="1574046804276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cosmetic_safety$app.coverage" NAME="app Coverage Results" MODIFIED="1574286911176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cosmetic_safety$app.coverage" NAME="app Coverage Results" MODIFIED="1574288296261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
