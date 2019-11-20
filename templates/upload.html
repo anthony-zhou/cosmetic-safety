@@ -5,6 +5,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Belleza|Lato&display=swap" rel="stylesheet">
     <meta charset="utf-8">
+<<<<<<< HEAD
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -22,6 +25,9 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> master
     <title>Cosmetic Safety Scanner</title>
     <style>
         html {
@@ -34,14 +40,14 @@
     #video {
       border: 1px solid black;
 
-      width:400px;
+      width:320px;
       height:240px;
     }
 
     #photo {
       border: 1px solid black;
 
-      width:400px;
+      width: 320px;
       height:240px;
     }
 
@@ -53,12 +59,12 @@
         margin-bottom: 100px;
     }
     .camera {
-      width: 420px;
+      width: 340px;
       display:inline-block;
     }
 
     .output {
-      width: 420px;
+      width: 340px;
       display:inline-block;
     }
 
@@ -84,7 +90,7 @@
         display: block;
         text-align: center;
         font-size: 20px;
-        width: 5vw;
+        width: 100px;
         padding: 10px 0 10px 0;
         box-shadow: none;
         border-radius: 10px;
@@ -96,10 +102,10 @@
         transition: 0.5s;
     }
     .scan-again {
-        width: 15vw;
+        width: 200px;
     }
     .custom-file-upload {
-        width: 20vw;
+        width: 300px;
         background: none;
         color: #E35D6A;
     }
@@ -114,6 +120,12 @@
         font-family: 'Belleza', Times New Roman, serif;
         letter-spacing: 5px;
     }
+    @media screen and (max-width: 800px) {
+        #wrapper {
+            width: 100%;
+            margin: 0;
+        }
+    }
     </style>
     <script>
     (function() {
@@ -121,7 +133,7 @@
       // width to the value defined here, but the height will be
       // calculated based on the aspect ratio of the input stream.
 
-      var width = 400;    // We will scale the photo width to this
+      var width = 320;    // We will scale the photo width to this
       var height = 0;     // This will be computed based on the input stream
 
       // |streaming| indicates whether or not we're currently streaming
