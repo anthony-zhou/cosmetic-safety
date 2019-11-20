@@ -5,7 +5,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Belleza|Lato&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-<<<<<<< HEAD
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -25,9 +24,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-=======
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
->>>>>>> master
     <title>Cosmetic Safety Scanner</title>
     <style>
         html {
@@ -195,11 +192,7 @@
       // captured.
 
       function clearphoto() {
-        var context = canvas.getContext('2d');
-        context.fillStyle = "#AAA";
-        context.fillRect(0, 0, canvas.width, canvas.height);
-
-        var data = canvas.toDataURL('image/png');
+        data = "/static/images/rosstheboss.png";
         photo.setAttribute('src', data);
       }
 
