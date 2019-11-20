@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-      <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
     <link href="https://fonts.googleapis.com/css?family=Belleza|Lato&display=swap" rel="stylesheet">
-    <meta charset="utf-8">=
+    <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmetic Safety Scanner</title>
@@ -31,246 +31,259 @@
         html {
             font-family: 'Lato', Arial, sans-serif;
         }
+
         #wrapper {
             width: 50%;
             margin: auto;
         }
-    #video {
-      border: 1px solid black;
 
-      width:320px;
-      height:240px;
-    }
+        #video {
+            border: 1px solid black;
 
-    #photo {
-      border: 1px solid black;
-
-      width: 320px;
-      height:240px;
-    }
-
-    #canvas {
-      display:none;
-    }
-    .take-image div {
-        vertical-align: top;
-        margin-bottom: 100px;
-    }
-    .camera {
-      width: 340px;
-      display:inline-block;
-    }
-
-    .output {
-      width: 340px;
-      display:inline-block;
-    }
-
-    #startbutton {
-      display:block;
-      position:relative;
-      margin-left:auto;
-      margin-right:auto;
-      bottom:40px;
-        border: 2px solid white;
-        border-radius: 10px;
-        padding: 5px;
-      background-color: #E35D6A;
-      font-size: 14px;
-      font-family: "Lato", "Arial", sans-serif;
-      color: rgba(255, 255, 255, 1.0);
-    }
-    input[type="file"] {
-        display: none;
-    }
-    input[type="submit"], .custom-file-upload, .scan-again {
-        margin-bottom: 50px;
-        display: block;
-        text-align: center;
-        font-size: 20px;
-        width: 100px;
-        padding: 10px 0 10px 0;
-        box-shadow: none;
-        border-radius: 10px;
-        border: 2px solid #E35D6A;
-        background-color: #E35D6A;
-        cursor: pointer;
-        color: white;
-        opacity: 0.8;
-        transition: 0.5s;
-    }
-    .scan-again {
-        width: 200px;
-    }
-    .custom-file-upload {
-        width: 300px;
-        background: none;
-        color: #E35D6A;
-    }
-    input[type="submit"]:hover, .custom-file-upload:hover, .scan-again:hover {
-        opacity: 1.0;
-    }
-    #heading {
-
-    }
-
-    #heading h1 {
-        font-family: 'Belleza', Times New Roman, serif;
-        letter-spacing: 5px;
-    }
-    @media screen and (max-width: 800px) {
-        #wrapper {
-            width: 100%;
-            margin: 0;
+            width: 320px;
+            height: 240px;
         }
-    }
+
+        #photo {
+            border: 1px solid black;
+
+            width: 320px;
+            height: 240px;
+        }
+
+        #canvas {
+            display: none;
+        }
+
+        .take-image div {
+            vertical-align: top;
+            margin-bottom: 100px;
+        }
+
+        .camera {
+            width: 340px;
+            display: inline-block;
+        }
+
+        .output {
+            width: 340px;
+            display: inline-block;
+        }
+
+        #startbutton {
+            display: block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            bottom: 40px;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: #E35D6A;
+            font-size: 14px;
+            font-family: "Lato", "Arial", sans-serif;
+            color: rgba(255, 255, 255, 1.0);
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        input[type="submit"], .custom-file-upload, .scan-again {
+            margin-bottom: 50px;
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            width: 100px;
+            padding: 10px 0 10px 0;
+            box-shadow: none;
+            border-radius: 10px;
+            border: 2px solid #E35D6A;
+            background-color: #E35D6A;
+            cursor: pointer;
+            color: white;
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+
+        .scan-again {
+            width: 200px;
+        }
+
+        .custom-file-upload {
+            width: 300px;
+            background: none;
+            color: #E35D6A;
+        }
+
+        input[type="submit"]:hover, .custom-file-upload:hover, .scan-again:hover {
+            opacity: 1.0;
+        }
+
+        #heading {
+
+        }
+
+        #heading h1 {
+            font-family: 'Belleza', Times New Roman, serif;
+            letter-spacing: 5px;
+        }
+
+        @media screen and (max-width: 800px) {
+            #wrapper {
+                width: 100%;
+                margin: 0;
+            }
+        }
     </style>
     <script>
-    (function() {
-      // The width and height of the captured photo. We will set the
-      // width to the value defined here, but the height will be
-      // calculated based on the aspect ratio of the input stream.
+        (function () {
+            // The width and height of the captured photo. We will set the
+            // width to the value defined here, but the height will be
+            // calculated based on the aspect ratio of the input stream.
 
-      var width = 320;    // We will scale the photo width to this
-      var height = 0;     // This will be computed based on the input stream
+            var width = 320;    // We will scale the photo width to this
+            var height = 0;     // This will be computed based on the input stream
 
-      // |streaming| indicates whether or not we're currently streaming
-      // video from the camera. Obviously, we start at false.
+            // |streaming| indicates whether or not we're currently streaming
+            // video from the camera. Obviously, we start at false.
 
-      var streaming = false;
+            var streaming = false;
 
-      // The various HTML elements we need to configure or control. These
-      // will be set by the startup() function.
+            // The various HTML elements we need to configure or control. These
+            // will be set by the startup() function.
 
-      var video = null;
-      var canvas = null;
-      var photo = null;
-      var startbutton = null;
+            var video = null;
+            var canvas = null;
+            var photo = null;
+            var startbutton = null;
 
-      function startup() {
-        video = document.getElementById('video');
-        canvas = document.getElementById('canvas');
-        photo = document.getElementById('photo');
-        startbutton = document.getElementById('startbutton');
+            function startup() {
+                video = document.getElementById('video');
+                canvas = document.getElementById('canvas');
+                photo = document.getElementById('photo');
+                startbutton = document.getElementById('startbutton');
 
-        navigator.mediaDevices.getUserMedia({video: true, audio: false})
-        .then(function(stream) {
-          video.srcObject = stream;
-          video.play();
-        })
-        .catch(function(err) {
-          console.log("An error occurred: " + err);
-        });
+                navigator.mediaDevices.getUserMedia({video: true, audio: false})
+                    .then(function (stream) {
+                        video.srcObject = stream;
+                        video.play();
+                    })
+                    .catch(function (err) {
+                        console.log("An error occurred: " + err);
+                    });
 
-        video.addEventListener('canplay', function(ev){
-          if (!streaming) {
-            height = video.videoHeight / (video.videoWidth/width);
+                video.addEventListener('canplay', function (ev) {
+                    if (!streaming) {
+                        height = video.videoHeight / (video.videoWidth / width);
 
-            // Firefox currently has a bug where the height can't be read from
-            // the video, so we will make assumptions if this happens.
+                        // Firefox currently has a bug where the height can't be read from
+                        // the video, so we will make assumptions if this happens.
 
-            if (isNaN(height)) {
-              height = width / (4/3);
+                        if (isNaN(height)) {
+                            height = width / (4 / 3);
+                        }
+
+                        video.setAttribute('width', width);
+                        video.setAttribute('height', height);
+                        canvas.setAttribute('width', width);
+                        canvas.setAttribute('height', height);
+                        streaming = true;
+                    }
+                }, false);
+
+                startbutton.addEventListener('click', function (ev) {
+                    takepicture();
+                    ev.preventDefault();
+                }, false);
+
+                clearphoto();
             }
 
-            video.setAttribute('width', width);
-            video.setAttribute('height', height);
-            canvas.setAttribute('width', width);
-            canvas.setAttribute('height', height);
-            streaming = true;
-          }
-        }, false);
+            // Fill the photo with an indication that none has been
+            // captured.
 
-        startbutton.addEventListener('click', function(ev){
-          takepicture();
-          ev.preventDefault();
-        }, false);
+            function clearphoto() {
+                data = "/static/images/rosstheboss.png";
+                photo.setAttribute('src', data);
+            }
 
-        clearphoto();
-      }
+            // Capture a photo by fetching the current contents of the video
+            // and drawing it into a canvas, then converting that to a PNG
+            // format data URL. By drawing it on an offscreen canvas and then
+            // drawing that to the screen, we can change its size and/or apply
+            // other changes before drawing it.
 
-      // Fill the photo with an indication that none has been
-      // captured.
+            function takepicture() {
+                var context = canvas.getContext('2d');
+                if (width && height) {
+                    canvas.width = width;
+                    canvas.height = height;
+                    context.drawImage(video, 0, 0, width, height);
 
-      function clearphoto() {
-        data = "/static/images/rosstheboss.png";
-        photo.setAttribute('src', data);
-      }
+                    var data = canvas.toDataURL('image/png');
+                    photo.setAttribute('src', data);
+                    uploadImage(data);
+                } else {
+                    clearphoto();
+                }
+            }
 
-      // Capture a photo by fetching the current contents of the video
-      // and drawing it into a canvas, then converting that to a PNG
-      // format data URL. By drawing it on an offscreen canvas and then
-      // drawing that to the screen, we can change its size and/or apply
-      // other changes before drawing it.
+            function uploadImage(image) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        console.log("We're in!");
+                        console.log(this.responseText);
+                        console.log(typeof (this.responseText))
+                        document.body.innerHTML = this.responseText;
+                    }
+                }
 
-      function takepicture() {
-        var context = canvas.getContext('2d');
-        if (width && height) {
-          canvas.width = width;
-          canvas.height = height;
-          context.drawImage(video, 0, 0, width, height);
+                xhttp.open("POST", "http://localhost:5000/uploadee", true);
+                xhttp.send(image);
+            }
 
-          var data = canvas.toDataURL('image/png');
-          photo.setAttribute('src', data);
-          uploadImage(data);
-        } else {
-          clearphoto();
-        }
-      }
-
-      function uploadImage(image) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function(){
-          if (this.readyState == 4 && this.status == 200) {
-            console.log("We're in!");
-            console.log(this.responseText);
-            console.log(typeof(this.responseText))
-            document.body.innerHTML = this.responseText;
-          }
-        }
-
-        xhttp.open("POST", "http://localhost:5000/uploadee", true);
-        xhttp.send(image);
-      }
-      // Set up our event listener to run the startup process
-      // once loading is complete.
-      window.addEventListener('load', startup, false);
-    })();
-  </script>
-  </head>
-  <body>
-  <div id="wrapper">
+            // Set up our event listener to run the startup process
+            // once loading is complete.
+            window.addEventListener('load', startup, false);
+        })();
+    </script>
+</head>
+<body>
+<div id="wrapper">
     <div id="heading">
         <h1>COSMETIC SAFETY SCANNER</h1>
-        <p>Take or upload a picture of a cosmetic product's ingredient list, and this tool will automatically scan the list to
+        <p>Take or upload a picture of a cosmetic product's ingredient list, and this tool will automatically scan the
+            list to
             determine if there are any harmful ingredients. </p>
     </div>
-      <h2>Take an image</h2>
-      <div class="take-image">
-              <div class="camera">
+    <h2>Take an image</h2>
+    <div class="take-image">
+        <div class="camera">
             <video id="video" width="320" height="240">Video stream not available.</video>
 
             <button id="startbutton">Take photo</button>
-          </div>
-          <canvas id="canvas" width="320" height="240">
-          </canvas>
+        </div>
+        <canvas id="canvas" width="320" height="240">
+        </canvas>
 
-          <div class="output">
-              <!--{{ url_for('static', filename='rosstheboss.png') }} --!>
-            <img id="photo" src="/static/images/rosstheboss.png" alt="The screen capture will appear in this box." >
-          </div>
-      </div>
+        <div class="output">
+            <!--{{ url_for('static', filename='rosstheboss.png') }} --!>
+            <img id="photo" src="/static/images/rosstheboss.png" alt="The screen capture will appear in this box.">
+        </div>
+    </div>
 
-      <h2>Upload an image</h2>
+    <h2>Upload an image</h2>
 
-      <form action = "http://localhost:5000/uploader" method = "POST"
-         enctype = "multipart/form-data">
-         <label for="file-upload" class="custom-file-upload">
+    <form action="http://localhost:5000/uploader" method="POST"
+          enctype="multipart/form-data">
+        <label for="file-upload" class="custom-file-upload">
             Upload an image
-         </label>
-         <input name="file" id="file-upload" type="file"/>
-         <input type = "submit"/>
-      </form>
-  </div>
-  </body>
+        </label>
+        <input name="file" id="file-upload" type="file"/>
+        <input type="submit"/>
+    </form>
+</div>
+</body>
 </html>

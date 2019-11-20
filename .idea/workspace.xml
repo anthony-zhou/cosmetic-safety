@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="917b1fb4-39f2-46a9-9062-8ac310ea127d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/imagereturn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/imagereturn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/resultstable.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resultstable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
