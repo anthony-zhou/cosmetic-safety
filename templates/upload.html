@@ -121,7 +121,11 @@
             font-family: 'Belleza', Times New Roman, serif;
             letter-spacing: 5px;
         }
-
+        @media screen and (max-width: 1020px) {
+            .desktop-only {
+                display: none; /*make desktop-only tags invisible on smaller screen widths */
+            }
+        }
         @media screen and (max-width: 800px) {
             #wrapper {
                 width: 100%;
@@ -251,25 +255,27 @@
             list to
             determine if there are any harmful ingredients. </p>
     </div>
-    <h2>Take an image</h2>
-    <div class="take-image">
-        <div class="camera">
-            <video id="video" width="320" height="240">Video stream not available.</video>
+    <div class="desktop-only">
+        <h2>Take an image</h2>
+        <div class="take-image">
+            <div class="camera">
+                <video id="video" width="320" height="240">Video stream not available.</video>
 
-            <button id="startbutton">Take photo</button>
-        </div>
-        <canvas id="canvas" width="320" height="240">
-        </canvas>
+                <button id="startbutton">Take photo</button>
+            </div>
+            <canvas id="canvas" width="320" height="240">
+            </canvas>
 
-        <div class="output">
-            <!--{{ url_for('static', filename='rosstheboss.png') }} -->
-            <img id="photo" src="/static/images/rosstheboss.png" alt="The screen capture will appear in this box.">
+            <div class="output">
+                <!--{{ url_for('static', filename='rosstheboss.png') }} -->
+                <img id="photo" src="/static/images/rosstheboss.png" alt="The screen capture will appear in this box.">
+            </div>
         </div>
     </div>
 
     <h2>Upload an image</h2>
 
-    <form action="http://localhost:5000/uploader" method="POST"
+    <form action="/uploader" method="POST"
           enctype="multipart/form-data">
         <label for="file-upload" class="custom-file-upload">
             Upload an image
