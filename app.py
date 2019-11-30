@@ -19,7 +19,7 @@ def uploader_file():
     if request.method == 'POST':
         f = request.files['file']
         f.save(f.filename)
-        full_filename = "/Users/nathaniel/PycharmProjects/cosmetic-safety/imageToSave.png"
+        full_filename = "https://cosmetic-safety-scanner.herokuapp.com/imageToSave.png"
         myjson = getjson(full_filename)
 
         return render_template("resultstable.html", chemicals=myjson)
@@ -45,6 +45,3 @@ def send_file(filename):
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
